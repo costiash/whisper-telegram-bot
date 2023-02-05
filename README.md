@@ -50,7 +50,6 @@ The Docker file is already in the repo and is customized for deployment of the b
 export TOKEN=<your_token_api>
 gcloud builds submit --tag gcr.io/<project_id>/index
 gcloud run deploy bot --image gcr.io/<project_id>/index --cpu 4 --memory 16Gi --platform managed --set-env-vars TOKEN=${TOKEN}
-curl "https://api.telegram.org/bot${TOKEN}/setWebhook?url=$(gcloud run services describe bot --format 'value(status.url)' --project deploy-whisper)"
 ```
 
 4. Creating the webhook between the Cloud Run endpoint and the telegram bot
