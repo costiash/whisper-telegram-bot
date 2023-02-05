@@ -8,7 +8,7 @@ Firstly, clone the repo and install the module of the OpenAI Whisper repo with t
 modifications needed for CPU dynamic quantization:
 
 ```bash
-git clone https://github.com/costiash/WhisperMe-telegram-bot.git
+git clone https://github.com/costiash/whisper-telegram-bot.git
 pip install -e ./whisper
 ```
 
